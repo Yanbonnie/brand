@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/weui.css">
+</head>
+
+<body>
+    <div class="detail">
+        <div class="topBtnBox">
+            <span>
+                <img src="./images/back.png" alt="">
+            </span>
+            <span>
+                <img src="./images/board.png" alt="">
+            </span>
+        </div>
+        <div class="centerBox">
+            <div class="title">
+                <img src="./images/detail_bg_01.png" alt="">
+                <h3>01</h3>
+            </div>
+            <div class="contain">
+                <div class="text">
+                    <span class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </span>
+                    <p class="brand">广汽传祺：15000票</p>
+                    <p class="info">广汽传祺（简称传祺）是广汽集团为提升核心竞争力，实现可持续发展而打造的国产品牌。2010年12月，首款车传祺GA5轿车成功推出市场，随后陆续推出多款车型。2017年，广汽传祺销量达50.86万辆，同比增长37%。</p>
+                    <div class="media">
+                        <video controls="controls" autoplay="autoplay">
+                            <source src="http://www.w3school.com.cn/i/movie.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <span class="toupiao"><img src="./images/toupiao.png" alt=""></span>
+                </div>
+            </div>
+            <div>
+                <img src="./images/detail_bg_03.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        var basep = "images/", //图片目录
+            preLoadSource = [ //背景资源
+                // basep + "bg.jpg",
+            ];
+    </script>
+    <!-- <script src="js/loading.js"></script> -->
+    <script src="js/vue.min.js"></script>
+    <script>
+        //加载资源数组必须在loading之前进行配置
+        $(function () {
+            new Vue({
+                el: "#index-box",
+                data: {
+
+                },
+                methods: {
+                    init: function () {
+
+                    }
+                },
+                mounted: function () {
+                    this.init();
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

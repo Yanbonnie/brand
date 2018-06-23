@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/weui.css">
+    <style>
+        [v-clock]{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="area" id="area" v-clock>
+        <div class="area_1" v-if="index == 1">
+            <img src="./images/area1.jpg" alt="">
+            <div class="item itemL item1">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+            </div>
+            <div class="item itemR item2">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+            </div>
+            <div class="item itemL item3">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+            </div>
+            <div class="item itemR item4">
+                    <div class="logo"></div>
+                    <div class="score">123,00</div>
+                </div>
+        </div>
+        <div class="area_2" v-if="index == 2">
+            <img src="./images/area2.jpg" alt="">
+            <div class="item itemL item1">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item2">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item3">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item4">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item5">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+        </div>
+        <div class="area_3" v-if="index == 3">
+            <img src="./images/area3.jpg" alt="">
+            <div class="item itemL item1">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item2">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item3">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item4">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item5">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item6">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item7">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item8">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item9">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item10">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item11">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item12">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item13">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item14">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item15">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item16">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item17">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item18">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item19">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item20">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item21">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item22">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item23">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item24">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item25">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item26">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item27">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item28">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+        </div>
+        <div class="area_4" v-if="index == 4">
+            <img src="./images/area4.jpg" alt="">
+            <div class="item itemL item1">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item2">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item3">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item4">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item5">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item6">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item7">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item8">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item9">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item10">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item11">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item12">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item13">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item14">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item15">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemL item16">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item17">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item18">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        var basep = "images/", //图片目录
+            preLoadSource = [ //背景资源
+                // basep + "bg.jpg",
+            ];
+    </script>
+    <!-- <script src="js/loading.js"></script> -->
+    <script src="js/vue.min.js"></script>
+    <script>
+        //加载资源数组必须在loading之前进行配置
+        $(function () {
+            new Vue({
+                el: "#area",
+                data: {
+                    index:null
+                },
+                methods: {
+                    getQueryString: function (name) {
+                        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                        var r = window.location.search.substr(1).match(reg);
+                        if (r != null) return unescape(r[2]);
+                        return null;
+                    },
+                },
+                mounted: function () {
+                    this.index = this.getQueryString('index');
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

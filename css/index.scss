@@ -1,0 +1,801 @@
+@import "_base.scss";
+@import "_loading_22.scss"; 
+$orange:#f49f4f;
+.wrap{
+    //visibility: hidden;
+}
+html,body{
+    width: 100%;
+    max-width: 750px;  
+    // height: 100%;
+    margin: 0 auto;
+    //min-height:REM(1039);
+    position: relative;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+[v-cloak]{
+    display: none;
+}
+body{
+    // background: url($URL+'bg.jpg') repeat;
+    // background-size: REM(97) REM(98);
+}
+.topBtnBox{
+    display: flex;
+    justify-content: space-between;
+    span{
+        flex-basis: REM(87);
+        height: REM(176);
+        &:nth-child(1){
+            margin-left: REM(30);
+        }
+        &:nth-child(2){
+            margin-right: REM(30);
+        }
+        img{
+            width: REM(87);
+        }
+    }
+}
+
+.centerBox{
+    margin-top: REM(-80);
+    .title{
+        position: relative;
+        h3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: REM(44);
+            padding-top: REM(75);
+            color: #d01100;
+        }
+    }
+    .contain{
+        background: url($URL+'detail_bg_02.png') repeat-y;
+        background-size: 100% auto;
+        width: 100%;
+        min-height: REM(500);
+        
+        .text{
+            padding: 0 REM(120);
+            .logo{
+                width: REM(155);
+                margin: 0 auto;
+                border-bottom: 1px #f3eb64 solid;
+                display: block;
+                padding-bottom: REM(20);
+            }
+            p{
+                color: #f3eb64;
+                font-size: REM(24);
+                &.brand{
+                    padding-top: REM(10);
+                    font-weight: bold;
+                    text-align: center;
+                }
+                &.info{
+                    padding-top: REM(20);
+                    line-height: REM(50);
+                }
+            }
+            .media{
+                margin-top: REM(20);
+                width: 100%;
+                min-height: REM(300);
+                background: #f3eb64;
+                border-radius: REM(10);
+                overflow: hidden;
+                video{
+                    width: 100%;
+
+                }
+            }
+            .toupiao{
+                width: REM(226);
+                margin: 0 auto;
+                display: block;
+                position: absolute;
+                bottom: REM(50);
+                left: 50%;
+                margin-left: REMTWO(226);
+            }
+        }
+        .boardList{
+            padding: 0 REM(120);
+            ul{
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #f3eb64;
+                    padding: REM(5) 0;
+                    overflow: hidden;
+                    span{
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        &:nth-child(1){
+                            flex-basis: 20%;
+                            b{
+                                width: REM(40);
+                                height: REM(40);
+                                background: #f3eb64;
+                                border-radius: 100%;
+                                color: #d01100;
+                                display: block;
+                                text-align: center;
+                                line-height: REM(40);
+                            }
+                        }
+                        &:nth-child(2){
+                            flex-basis: 30%;
+                            img{
+                                width: REM(80);
+                            }
+                        }
+                        &:nth-child(3){
+                            flex-basis: 25%;
+                        }
+                        &:nth-child(4){
+                            flex-basis: 25%;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#index-box{
+    width: 100%;
+    height: 100%;
+    background: url($URL+'bg.jpg') no-repeat;
+    background-size: 100% 100%;
+    
+    .titleLogo{
+        width: REM(538);
+        margin: 0 auto;
+        margin-top: REM(-50);
+    }
+    .btnBox{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: REM(40);
+        width: 80%;
+        
+        span{
+            flex-basis: REM(226);
+            position: relative;
+            .btn_active{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: REM(226);
+            }
+        }
+    }
+    
+}
+
+.area{
+    .item{
+        width: REM(242);
+        height: REM(168);
+        // background: rgba(0,0,0,0.5);
+        position: absolute;
+        .logo{
+            width: REM(81);
+            height: REM(36);
+            // background: rgba(255,255,255,0.5);
+            position: absolute;
+        }
+        .score{
+            width: REM(130);
+            height: REM(33);
+            // background:rgba(255,255,255,0.5);   
+            position: absolute;
+            color: #fe5937;
+            text-align: left;
+            font-weight: bold;
+            line-height: REM(33);
+        }
+        .home{
+            width: REM(76);
+            height: REM(116);
+            position: absolute;
+            bottom: 0;
+            // background: rgba(255,255,255,0.5);
+        }
+    }
+    .area_1{
+        .itemL{
+            .logo{
+                left: 0;
+                top: REM(17);
+            }
+            .score{
+                right: REM(0);
+                top: REM(35);
+            }
+        }
+        .itemR{
+            .logo{
+                right: REM(6);
+                top: REM(6);
+            }
+            .score{
+                top: REM(65);
+                left: REM(12);
+            }
+        }
+        .item1{
+           left: REM(64);
+           top: REM(213); 
+        }
+        .item2{
+            right: REM(165);
+            top: REM(319);
+        }
+        .item3{
+            left: REM(78);
+            top: REM(479);
+        }
+        .item4{
+            left: REM(100);
+            top: REM(798);
+            .score{
+                top: REM(56);
+            }
+        }
+    }
+
+    //地图2
+    .area_2{
+        .item{
+            width: REM(248);
+        }
+        .itemL{
+            .logo{
+                left: REM(2);
+                top: REM(1);
+            }
+            .score{
+                right: REM(0);
+                top: REM(40);
+            }
+            .home{
+                left: REM(6);
+            }
+        }
+        .itemR{
+            .logo{
+                right: REM(6);
+                top: REM(0);
+            }
+            .score{
+                top: REM(58);
+                left: REM(20);
+            }
+            .home{
+                right: REM(6);
+            }
+        }
+        .item1{
+            top: REM(110);
+            left: REM(121);
+        }
+        .item2{
+            top: REM(213);
+            right: REM(175);
+        }
+        .item3{
+            top: REM(388);
+            left: REM(140);
+            .score{
+                top: REM(25);
+            }
+        }
+        .item4{
+            top: REM(699);
+            left:REM(175);
+
+        }
+        .item5{
+            left: REM(332);
+            top: REM(1038);
+            .score{
+                top: REM(18);
+            }
+        }
+    }
+    .area_3{
+        .item{
+            
+            .home{
+                width: REM(80);
+                height: REM(120);
+            }
+        }
+        .itemL{
+            width: REM(238);
+            height: REM(182);
+            .home{
+                left:REM(5);
+                bottom: REM(2);
+            }
+            .logo{
+                left: REM(2);
+                top: REM(14);
+            }
+            .score{
+                right: REM(-5);
+                top: REM(35);
+            }
+        }
+        .itemR{
+            .home{
+                height: REM(120);
+                right: REM(5);
+                bottom: 0;
+            }
+            .logo{
+                right: REM(5);
+                top: 0;
+            }
+            .score{
+                left: REM(5);
+                top: REM(66);
+                left: REM(15);
+            }
+        }
+        .item1{      
+            width: REM(238);
+            height: REM(190);      
+            left: REM(65);
+            top: REM(258);
+            .logo{
+                top: REM(20);
+            }
+        }
+        .item2{
+            right: REM(165);
+            top: REM(143);
+            .score{
+                top: REM(115);
+                left: REM(5);
+            }
+        }
+        .item3{
+            top: REM(369);
+            right: REM(164);
+            .score{
+                top: REM(55);
+                left: REM(12);
+            }
+        }
+        .item4{
+            top: REM(518);
+            left:REM(81);
+        }
+        .item5{
+            top: REM(588);
+            right: REM(17);
+        }
+        .item6{
+            top: REM(818);
+            right: REM(38);
+            .score{
+                top: REM(52);
+            }
+        }
+        .item7{
+            top: REM(1020);
+            right: REM(108);
+            .score{
+                top: REM(20);
+                left: REM(5);
+            }
+        }
+        .item8{
+            top: REM(848);
+            right: REM(410);
+            .logo{
+                right: REM(9);
+                top: REM(2);
+            }
+            .score{
+                left: REM(5);
+                top: REM(50);
+            }
+        }
+        .item9{
+            top: REM(1096);
+            left: REM(109);
+        }
+        .item10{
+            top: REM(1182);
+            left: REM(342);
+            .score{
+                top: REM(23);
+            }
+        }
+        .item11{
+            top: REM(1212);
+            right: REM(18);
+            .score{
+                top: REM(138);
+            }
+        }
+        .item12{
+            right: REM(17);
+            top: REM(1590);
+            .score{
+                top: REM(28);
+            }
+        }
+        .item13{
+            left: REM(285);
+            top: REM(1415);
+        }
+        .item14{
+            left: REM(22);
+            top: REM(1503);
+        }
+        .item15{
+            left: REM(79);
+            top: REM(1742);
+        }
+        .item16{
+            left: REM(285);
+            top: REM(1860);
+        }
+        .item17{
+            top: REM(1775);
+            right: REM(-8);
+            .score{
+                top: REM(25);
+            }
+        }
+        .item18{
+            left: REM(40);
+            top: REM(2105);
+        }
+        .item19{
+            left: REM(35);
+            top: REM(2462);
+        }
+        .item20{
+            top: REM(2398);
+            right: REM(22);
+        }
+        .item21{
+            top: REM(2569);
+            right: REM(81);
+            .score{
+                top: REM(25);
+                left: REM(10);
+            }
+        }
+        .item22{
+            top: REM(2635);
+            right: REM(360);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+        .item23{
+            top: REM(2875);
+            right: REM(355);
+            .score{
+                top: REM(125);
+                left:REM(10);
+            }
+        }
+        .item24{
+            top: REM(2828);
+            right: REM(57);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+        .item25{
+            top: REM(3145);
+            left: REM(418);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+        .item26{
+            top: REM(3081);
+            left: REM(125);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+        .item27{
+            top: REM(3250);
+            left: REM(17);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+        .item28{
+            top: REM(3455);
+            left: REM(255);
+            .score{
+                top: REM(115);
+                left:REM(10);
+            }
+        }
+    }
+    .area_4{
+        .item{
+            
+            .home{
+                width: REM(80);
+                height: REM(120);
+            }
+        }
+        .itemL{
+            width: REM(238);
+            height: REM(182);
+            .home{
+                left:REM(5);
+                bottom: REM(2);
+            }
+            .logo{
+                left: REM(2);
+                top: REM(14);
+            }
+            .score{
+                right: REM(-5);
+                top: REM(35);
+            }
+        }
+        .itemR{
+            .home{
+                height: REM(120);
+                right: REM(5);
+                bottom: 0;
+            }
+            .logo{
+                right: REM(5);
+                top: 0;
+            }
+            .score{
+                left: REM(5);
+                top: REM(66);
+                left: REM(15);
+            }
+        }
+        .item1{      
+            width: REM(238);
+            height: REM(190);      
+            left: REM(55);
+            top: REM(158);
+            .logo{
+                top: REM(20);
+            }
+            .score{
+                right: REM(-10);
+            }
+        }
+        .item2{
+            right: REM(170);
+            top: REM(45);
+            .score{
+                top: REM(115);
+                left: REM(5);
+            }
+        }
+        .item3{
+            top: REM(270);
+            right: REM(168);
+            .score{
+                top: REM(55);
+                left: REM(12);
+            }
+        }
+        .item4{
+            top: REM(418);
+            left:REM(78);
+        }
+        .item5{
+            top: REM(488);
+            right: REM(22);
+        }
+        .item6{
+            top: REM(718);
+            right: REM(42);
+            .score{
+                top: REM(52);
+            }
+        }
+        .item7{
+            top: REM(920);
+            right: REM(118);
+            .score{
+                top: REM(20);
+                left: REM(5);
+            }
+        }
+        .item8{
+            top: REM(748);
+            right: REM(415);
+            .logo{
+                right: REM(9);
+                top: REM(2);
+            }
+            .score{
+                left: REM(5);
+                top: REM(50);
+            }
+        }
+        .item9{
+            top: REM(995);
+            left: REM(100);
+        }
+        .item10{
+            top: REM(1082);
+            left: REM(338);
+            .score{
+                top: REM(23);
+            }
+        }
+        .item11{
+            top: REM(1112);
+            right: REM(20);
+            .score{
+                top: REM(138);
+            }
+        }
+        .item12{
+            right: REM(20);
+            top: REM(1490);
+            .score{
+                top: REM(28);
+            }
+        }
+        .item13{
+            left: REM(280);
+            top: REM(1315);
+        }
+        .item14{
+            left: REM(15);
+            top: REM(1400);
+        }
+        .item15{
+            left: REM(275);
+            top: REM(1760);
+        }
+        .item16{
+            top: REM(1678);
+            right: REM(0);
+            .score{
+                top: REM(25);
+            }
+        }
+        .item17{
+            left: REM(35);
+            top: REM(2002);
+        }
+        .item18{
+            top: REM(2295);
+            right: REM(27);
+        }
+    }
+}
+.cover{
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    top: 0;
+    position: absolute;
+    left: 0;
+    .coverBox{
+        width: REM(600);
+        position: absolute;
+        background: #FFFFFF;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        left: 50%;
+        top: 50%;
+        margin-top:REMTWO(300);
+        height: REM(230);
+        margin-left: REMTWO(600);
+        padding: REM(80) 0 0;
+        position: relative;
+        input{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            height: REM(80);
+            line-height: REM(80);
+            border: 1px #eeeeee solid;
+            text-indent: 10px;
+            font-size:REM(28);
+        }
+        .btn-box{
+            width: 100%;
+            height: REM(60);
+            position: absolute;
+            bottom: 0;
+            border-top: 1px #eee solid;
+            padding: REM(10) 0;
+            span{
+                width: 50%;
+                height: REM(60);
+                line-height: REM(60);
+                text-align: center;
+                display: block;
+                float: left;
+                font-size:REM(28);
+                &:nth-child(1){
+                    border-right: 1px #eeeeee solid;
+                    margin-left: -1px;
+                }
+                &:nth-child(2){
+                    color: #ff503f;
+                }
+            }
+        }
+    }
+
+}
+.rule,.detail,.board{
+    background: url($URL+'bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.detail{
+    min-height: 100%; //155*115
+}
+.share{
+    img{
+        width: REM(555);
+        display: block;
+        position: absolute;
+        right: REM(50);
+        top: REM(10);
+
+    }
+}
+
+.sign_page_scrollBody::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 0px #fff;
+    border-radius: 0px;
+    background-color: #fff;
+}
+.sign_page_scrollBody::-webkit-scrollbar
+{
+    width:5px;
+    background-color: #eeeeee;
+}
+
+.sign_page_scrollBody::-webkit-scrollbar-thumb
+{
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 5px #eeeeee;
+    background-color: #eeeeee;
+}
