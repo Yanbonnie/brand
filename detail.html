@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    
     <div class="detail" id="detail">
         <div id="__nc" v-show="yzState">
             <div id="nc"></div>
@@ -29,7 +28,7 @@
                 <img src="./images/board.png" alt="">
             </span>
         </div>
-        <div class="centerBox" v-clock>
+        <div class="centerBox" v-clock v-if="detailInfo">
             <div class="title">
                 <img src="./images/detail_bg_01.png" alt="">    
                 <h3>{{detailInfo.ranking}}</h3>
@@ -41,12 +40,13 @@
                     </span>
                     <p class="brand">{{detailInfo.name}}：{{detailInfo.vote_num}}票</p>
                     <p class="info">{{detailInfo.synopsis}}</p>
-                    <div class="media" v-if="detailInfo.video">
+                    <!-- <div class="media" v-if="detailInfo.video">
                         <video controls="controls">
                             <source :src="detailInfo.video" type="video/mp4" />
                         </video>
-                    </div>
-                    <span class="toupiao"  @click="yanzheng"><img src="./images/toupiao.png" alt=""></span>
+                    </div> -->
+                    <span v-if="detailInfo.my_vote_num > 0" class="toupiao"  @click="yanzheng"><img src="./images/toupiao.png" alt=""></span>
+                    <span v-else class="toupiao"  @click="yanzheng2"><img src="./images/toupiao_gray.png" alt=""></span>
                 </div>
             </div>
             <div>
@@ -132,10 +132,13 @@
                 el: "#detail",
                 data: {
                     id:null,
-                    detailInfo:null,
+                    detailInfo:{
+                        ranking:'122'
+                    },
                     getDetails:'getDetails',             //获取详情页接口
                     postVote:'postVote',                 //为企业进行投票接口
                     getRanking:'getRanking',             //获取排行榜接口
+                    is_validate:null,
                     loading:{        //加载中弹框
                         status:false,
                         txt:'加载中...'
@@ -150,7 +153,8 @@
                     },
                     boardState:false,
                     rankList:[],
-                    yzState:false
+                    yzState:false,
+                    count:0
                 },
                 methods: {
                     //为企业进行投票
@@ -173,7 +177,7 @@
                             }
                         })
                     },
-                    //获取企业列表数据
+                    //获取企业列表详情数据
                     getDetailsHandle:function(){
                         var This = this;
                         this.loading.status = true;
@@ -188,7 +192,8 @@
                             success:function(res){
                                 this.loading.status = false;
                                 if(res.status == 0){
-                                    This.detailInfo = res.data;   
+                                    This.detailInfo = res.data;  
+                                    This.is_validate = res.is_validate; 
                                 }else{
                                     this.alertHandle(res.msg)
                                 }
@@ -230,6 +235,13 @@
                             this.alert.txt = '';
                         },1500)
                     },
+                    yanzheng2(){                        
+                        if(!this.count){
+                            this.dialog.status = true;
+                            this.dialog.txt = "今天投票机会已用完";
+                        }
+                        this.count = 1;
+                    },
                     yanzheng:function(){
                         var This = this;
                         this.yzState = true;
@@ -251,7 +263,7 @@
                                 // 'analyze': '//a.com/nocaptcha/analyze.jsonp',
                                 // 'uab_Url': '//aeu.alicdn.com/js/uac/909.js',
                             },
-                            bannerHidden:false,
+                            bannerHidden:true,  //验证通过后，自动隐藏组件
                             initHidden:false,
                             callback: function (data) {
                                 window.console && console.log(nc_token)
