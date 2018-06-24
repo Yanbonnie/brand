@@ -17,33 +17,43 @@
 
 <body>
     <div class="area" id="area" v-clock>
-        <div class="area_1" v-if="index == 1">
+        <div class="area_1"  v-if="index == 1"> <!--4-->
             <img src="./images/area1.jpg" alt="">
-            <div class="item itemL item1">
-                <div class="logo"></div>
-                <div class="score">123,00</div>
-            </div>
-            <div class="item itemR item2">
-                <div class="logo"></div>
-                <div class="score">123,00</div>
-            </div>
-            <div class="item itemL item3">
-                <div class="logo"></div>
-                <div class="score">123,00</div>
-            </div>
-            <div class="item itemR item4">
-                    <div class="logo"></div>
-                    <div class="score">123,00</div>
+            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
                 </div>
-        </div>
-        <div class="area_2" v-if="index == 2">
-            <img src="./images/area2.jpg" alt="">
-            <div class="item itemL item1">
+                <div class="score">{{item.vote_num}}</div>
+                <div class="home" @click="goDetail(item.id)">
+                    <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
+                </div>
+            </div>
+            <!-- <div class="item itemR item2">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
-            <div class="item itemR item2">
+            <div class="item itemL item3">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item4">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div> -->
+        </div>
+        <div class="area_2" v-if="index == 2">
+            <img src="./images/area2.jpg" alt="">
+            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home" @click="goDetail(item.id)">
+                    <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
+                </div>
+            </div>
+            <!-- <div class="item itemR item2">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
@@ -62,16 +72,18 @@
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div>
+            </div> -->
         </div>
         <div class="area_3" v-if="index == 3">
             <img src="./images/area3.jpg" alt="">
-            <div class="item itemL item1">
+            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
-                <div class="score">123,00</div>
-                <div class="home"></div>
+                <div class="score">{{item.vote_num}}</div>
+                <div class="home" @click="goDetail(item.id)">
+                    <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
+                </div>
             </div>
-            <div class="item itemR item2">
+            <!-- <div class="item itemR item2">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
@@ -156,7 +168,7 @@
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
-            <div class="item itemR item19">
+            <div class="item itemL item19">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
@@ -206,15 +218,32 @@
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
-        </div>
-        <div class="area_4" v-if="index == 4">
-            <img src="./images/area4.jpg" alt="">
-            <div class="item itemL item1">
+            <div class="item itemR item29">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
-            <div class="item itemR item2">
+            <div class="item itemR item30">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item31">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div> -->
+        </div>
+        <div class="area_4" v-if="index == 4">
+            <img src="./images/area4.jpg" alt="">
+            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+                <div class="logo"></div>
+                <div class="score">{{item.vote_num}}</div>
+                <div class="home" @click="goDetail(item.id)">
+                        <img src="./images/house.jpg" v-show="item.is_vote == 0" alt="">
+                </div>
+            </div>
+            <!-- <div class="item itemR item2">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
@@ -299,28 +328,177 @@
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
+            <div class="item itemL item19">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div>
+            <div class="item itemR item20">
+                <div class="logo"></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
+            </div> -->
 
+        </div>
+        <!-- 加载中 -->
+        <div id="loadingToast" v-show="loading.status">
+            <div class="weui-mask_transparent"></div>
+            <div class="weui-toast">
+                <i class="weui-loading weui-icon_toast"></i>
+                <p class="weui-toast__content" v-html="loading.txt"></p>
+            </div>
+        </div>
+        <!--按钮提示框-->
+        <!--BEGIN dialog2-->
+        <div class="js_dialog" id="iosDialog2" v-show="dialog.status">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__bd">{{dialog.txt}}</div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary" @click="dialog.status = false">知道了</a>
+                </div>
+            </div>
+        </div>
+        <!-- 提示框，1000消失 -->
+        <div class="tipBox" v-show="alert.status">
+            <div class="tibBox_inner">
+                <p v-html="alert.txt"></p>
+            </div>
         </div>
     </div>
 
     <script src="js/zepto.min.js"></script>
-    <script type="text/javascript">
-        var basep = "images/", //图片目录
-            preLoadSource = [ //背景资源
-                // basep + "bg.jpg",
-            ];
-    </script>
-    <!-- <script src="js/loading.js"></script> -->
     <script src="js/vue.min.js"></script>
     <script>
+        var handleArr = [
+            [],
+            ['item1 itemL','item2 itemR','item3 itemL','item4 itemR'],
+            ['item1 itemL','item2 itemR','item3 itemL','item4 itemR','item5 itemL'],
+            ['item1 itemL','item2 itemR','item3 itemR','item4 itemL','item5 itemR','item6 itemL','item7 itemR','item8 itemR','item9 itemL','item10 itemL','item11 itemR','item12 itemL','item13 itemL','item14 itemR','item15 itemL','item16 itemL','item17 itemL','item18 itemR','item19 itemL','item20 itemR','item21 itemR','item22 itemR','item23 itemR','item24 itemR','item25 itemR','item26 itemR','item27 itemR','item28 itemR','item29 itemR','item30 itemR','item31 itemR'],
+            ['item1 itemL','item2 itemR','item3 itemR','item4 itemL','item5 itemR','item6 itemL','item7 itemR','item8 itemR','item9 itemL','item10 itemL','item11 itemR','item12 itemL','item13 itemL','item14 itemR','item15 itemL','item16 itemL','item17 itemR','item18 itemR','item19 itemL','item20 itemR']
+        ]
+        var companyList = [{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },
+        {
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        },{
+            vote_num:'1000'
+        }]
         //加载资源数组必须在loading之前进行配置
         $(function () {
             new Vue({
                 el: "#area",
                 data: {
-                    index:null
+                    index:null,
+                    companyList:companyList,
+                    handleArr:handleArr,
+                    getEnterprise:'getEnterprise',              //获取企业列列表数据接⼝
+
+                    loading:{        //加载中弹框
+                        status:false,
+                        txt:'加载中...'
+                    },
+                    dialog:{    //带按钮提示框
+                        status:false,
+                        txt:'这里是提示内容'
+                    },
+                    alert:{     //提示自动消失框
+                        status:false,
+                        txt:'这里是提示内容'
+                    }
                 },
                 methods: {
+                    //获取企业列表数据
+                    getEnterpriseHandlel:function(){
+                        var This = this;
+                        $.ajax({
+                            type:'GET',
+                            url:this.getEnterprise,
+                            dataType:'json',
+                            cache:false,
+                            data:{
+                                type:this.index
+                            },
+                            success:function(res){
+                                if(res.status == 0){
+                                    This.companyList = res.data;   
+                                }else{
+                                    this.alertHandle(res.msg)
+                                }
+                            }
+                        })
+                    },
+                    //到达详情页
+                    goDetail:function(id){
+                        window.location.href="detail.html?id="+id
+                    },
+                    //处理提示弹框函数
+                    alertHandle:function(msg){
+                        var This = this;
+                        this.alert.status = true;
+                        this.alert.txt = msg;
+                        setTimeout(function(){
+                            This.alert.status = false;
+                            this.alert.txt = '';
+                        },1500)
+                    },
                     getQueryString: function (name) {
                         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
                         var r = window.location.search.substr(1).match(reg);

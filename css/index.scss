@@ -7,7 +7,7 @@ $orange:#f49f4f;
 html,body{
     width: 100%;
     max-width: 750px;  
-    // height: 100%;
+    height: 100%;
     margin: 0 auto;
     //min-height:REM(1039);
     position: relative;
@@ -160,10 +160,10 @@ body{
 
 #index-box{
     width: 100%;
-    height: 100%;
+    // height: 100%;
     background: url($URL+'bg.jpg') no-repeat;
     background-size: 100% 100%;
-    
+    min-height: 100%;
     .titleLogo{
         width: REM(538);
         margin: 0 auto;
@@ -202,6 +202,13 @@ body{
             height: REM(36);
             // background: rgba(255,255,255,0.5);
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width:80%;
+                max-height: 80%;
+            }
         }
         .score{
             width: REM(130);
@@ -222,6 +229,9 @@ body{
         }
     }
     .area_1{
+        .item .logo{
+            height: REM(40);
+        }
         .itemL{
             .logo{
                 left: 0;
@@ -230,6 +240,9 @@ body{
             .score{
                 right: REM(0);
                 top: REM(35);
+            }
+            .home{
+                left: REM(6);
             }
         }
         .itemR{
@@ -241,18 +254,31 @@ body{
                 top: REM(65);
                 left: REM(12);
             }
+            .home{
+                right: REM(6);
+            }
         }
         .item1{
            left: REM(64);
            top: REM(213); 
+           .home{
+               left: REM(5);
+               top: REM(70);
+           }
         }
         .item2{
             right: REM(165);
             top: REM(319);
+            .home{
+                bottom: REM(-5);
+            }
         }
         .item3{
             left: REM(78);
             top: REM(479);
+            .logo{
+                top: REM(5);
+            }
         }
         .item4{
             left: REM(100);
@@ -300,7 +326,10 @@ body{
         }
         .item2{
             top: REM(213);
-            right: REM(175);
+            right: REM(174);
+            .home{
+                bottom: REM(-2);
+            }
         }
         .item3{
             top: REM(388);
@@ -312,6 +341,9 @@ body{
         .item4{
             top: REM(699);
             left:REM(175);
+            .score{
+                top: REM(48);
+            }
 
         }
         .item5{
@@ -471,18 +503,40 @@ body{
             }
         }
         .item18{
+            top: REM(2065);
+            right: REM(15);
+            .score{
+                top: REM(15);
+                left: REM(8);
+            }
+        }
+        .item19{
+            top: REM(2100);
+            left: REM(345);
+            .score{
+                top: REM(115);
+            }
+        }
+        .item20{
             left: REM(40);
             top: REM(2105);
         }
-        .item19{
+        .item21{
+            left: REM(227);
+            top: REM(2340);
+        }
+        .item22{
             left: REM(35);
             top: REM(2462);
+            .score{
+                top:REM(135);
+            }
         }
-        .item20{
+        .item23{
             top: REM(2398);
             right: REM(22);
         }
-        .item21{
+        .item24{
             top: REM(2569);
             right: REM(81);
             .score{
@@ -490,7 +544,7 @@ body{
                 left: REM(10);
             }
         }
-        .item22{
+        .item25{
             top: REM(2635);
             right: REM(360);
             .score{
@@ -498,7 +552,7 @@ body{
                 left:REM(10);
             }
         }
-        .item23{
+        .item26{
             top: REM(2875);
             right: REM(355);
             .score{
@@ -506,7 +560,7 @@ body{
                 left:REM(10);
             }
         }
-        .item24{
+        .item27{
             top: REM(2828);
             right: REM(57);
             .score{
@@ -514,7 +568,7 @@ body{
                 left:REM(10);
             }
         }
-        .item25{
+        .item28{
             top: REM(3145);
             left: REM(418);
             .score{
@@ -522,7 +576,7 @@ body{
                 left:REM(10);
             }
         }
-        .item26{
+        .item29{
             top: REM(3081);
             left: REM(125);
             .score{
@@ -530,7 +584,7 @@ body{
                 left:REM(10);
             }
         }
-        .item27{
+        .item30{
             top: REM(3250);
             left: REM(17);
             .score{
@@ -538,7 +592,7 @@ body{
                 left:REM(10);
             }
         }
-        .item28{
+        .item31{
             top: REM(3455);
             left: REM(255);
             .score{
@@ -686,6 +740,9 @@ body{
         .item15{
             left: REM(275);
             top: REM(1760);
+            .score{
+                top: REM(28);
+            }
         }
         .item16{
             top: REM(1678);
@@ -695,11 +752,23 @@ body{
             }
         }
         .item17{
+            right:REM(22);
+            top: REM(1966);
+            .score{
+                top: REM(15);
+                left: REM(8);
+            }
+        }
+        .item18{
             left: REM(35);
             top: REM(2002);
         }
-        .item18{
-            top: REM(2295);
+        .item19{
+            left: REM(376);
+            top: REM(2225);
+        }
+        .item20{
+            top: REM(2296);
             right: REM(27);
         }
     }
@@ -778,6 +847,86 @@ body{
         right: REM(50);
         top: REM(10);
 
+    }
+}
+
+
+.tipBox{
+    width:100%;
+    height: 100%;
+    position:fixed;
+    z-index: 1001;
+    background:rgba(255,255,255,0);
+    .tibBox_inner{
+        max-width: REM(500);
+        // height: REM(200);
+        background: rgba(0,0,0,0.5);
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        @include prefixer(transform,translate(-50%,-50%));
+        @include prefixer(border-radius,REM(10));
+        p{
+            line-height: REM(45);
+            font-size: REM(30);
+            color: #fff;
+            padding:REM(50);
+            text-align: center;
+        }
+    }
+}
+
+/*提示*/
+.tip .weui-icon_msg{
+    font-size: 3rem;
+    padding-bottom:10px;
+}
+
+.weui-toast {
+    position: fixed;
+    z-index: 5000;
+    width: REM(300);
+    min-height: REM(300);
+    top: 50%;
+    left: 50%;
+    margin-top: REMTWO(300);
+    margin-left:REMTWO(300);
+    background: rgba(17,17,17,0.7);
+    text-align: center;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.weui-toast__content{
+    line-height: REM(80);
+    font-size: 15px;
+}
+.weui-dialog__bd{
+    line-height: 2rem;
+}
+
+
+
+#__nc{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    ._nc{
+        top: 20%;
+        position: absolute;
+    }
+}
+._nc{
+    top: 20%;
+    position: absolute;
+    img{
+        width: auto;
     }
 }
 
