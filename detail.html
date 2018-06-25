@@ -28,18 +28,49 @@
                 <img src="./images/board.png" alt="">
             </span>
         </div>
-        <div class="centerBox" v-clock v-if="detailInfo">
+        <div class="centerBox" >
             <div class="title">
                 <img src="./images/detail_bg_01.png" alt="">    
-                <h3>{{detailInfo.ranking}}</h3>
+                <h3></h3>
             </div>
             <div class="contain">
                 <div class="text">
                     <span class="logo">
-                        <img :src="detailInfo.logo" alt="">
+                       
                     </span>
-                    <p class="brand">{{detailInfo.name}}：{{detailInfo.vote_num}}票</p>
-                    <p class="info">{{detailInfo.synopsis}}</p>
+                    <p>（1）含义：可爱是一种吸引力，和青少年以及外貌的概念息息相关。由康拉德·洛伦兹（Konrad Lorenz）建立的动物行为学也对可爱的定义提出了科学根据。可爱的特色包括了婴儿特征的体态或脸孔，特别是小小的身躯有着不成比例的大头、大眼、小鼻与酒窝，而且身体显得圆滚滚又柔软。除了生理方面，婴儿的心理特质也被视为可爱的象征，例如爱玩、脆弱、无助、好奇心、天真以及撒娇等特质。
+                        ①天真无邪
+                        ②令人喜爱
+                        ③形容心灵单纯的意思
+                        ④富有爱心
+                        （2）来源：原始生命当中，产生优先对健康婴儿的幼弱生命的保护欲；协同地，婴儿适应本族甚至他族理想的纪元生物在进化过程中“指向健康“的审美风格的变化，淘汰大多其他进化方向，从而受到喜爱和保护，进而使后代得以延续，其余的生命断绝了子嗣。因此现有生命都存在这种本能迁移后对类幼儿生命的喜爱。
+                        （3）Q版：游戏中的”Q“的意思。Q是“cute”的同音简化，可爱的意思，Q版游戏中的人物往往有日式动漫风格，大眼睛很漂亮的那种。
+                        （4）“Cute”【kju:t】adj.：可爱的，聪明的，伶俐的，装腔作势的Cute原本是acute一词的缩略形式，意为“洞察力或识别力极其敏锐的”。
+                        后来cute被用作描述敏锐性事物的褒义词，并逐渐形成了自身固定词义：“漂亮的、迷人的”。例如，我们经常听到人们用cute一词来形容一些可爱的人或事。
+                        如：cute kitten，cute dog，cute baby；表示“小巧”、“可爱”的意思；
+                        cute girl，cute guy，cute color，cute house表示“迷人”、“好看”的意思。
+                        在口语中cute指事的时候是棒的意思。
+                        但此种用法仅限于美式英语，而在英式英语中，cute是形容人刁钻狡猾，并非褒义词。
+                        （5）还是一些非主流用词中——可以爱的意思即为【可，爱】
+                        现代新新人类另类译法：
+                        （1）可爱是可怜没人爱的简称。
+                        （2）可爱另一种含义为可笑、幼稚，为贬义。
+                        适用场合
+                        多用来形容儿童或动物，有的阳光型大男孩也可用可爱形容，令人发笑快乐而产生喜爱之情的也可以用可爱来形容。较少用来形容成年人或老年人，有时也用来形容宠物动物，很多图片也可用可爱形容。可爱也可指心灵美的，天真的，纯洁的小孩或拥有童心的老顽童。
+                        出处
+                        （1）令人敬爱的；相关文献：
+                        　　《书·大禹谟》：“可爱非君？可畏非民？”
+                        　　汉·东方朔《神异经·东荒经》：“东方有人焉，男皆朱衣缟带玄冠。女皆采衣，男女便转可爱。”
+                        　　宋·陆游《老学庵笔记》卷四：“（予）见荆棘中有崖石，刻‘树石’二大字，奇古可爱。”
+                        　　明·刘基 《浣溪沙·秋思》词：“枫叶有霜纔可爱，菊花无酒不须开。”
+                        　　老舍《骆驼祥子》三：“太阳似乎不象刚才那样可爱了！”
+                        　　（2）令人喜爱的，讨人喜欢的，深受热爱的；相关文献：
+                        　　东晋·习凿齿与燕王书曰：“匈奴名妻作‘阏支’，言其可爱如烟肢也。”
+                        　　清·沈复《浮生六记·闺房记乐》：“ 李诗宛如姑射仙子，有一种落花流水之趣，令人可爱。”
+                        　　（3）旧用】于中国近代，“可爱”也同样被当作“可敬；可受爱戴”来使用。例如，抗美援朝时期，魏巍写了一篇报告文学《谁是最可爱的人》，在全国造成了很大影响。
+                        </p>
+                    <!-- <p class="brand">{{detailInfo.name}}：{{detailInfo.vote_num}}票</p>
+                    <p class="info">{{detailInfo.synopsis}}</p> -->
                     <!-- <div class="media" v-if="detailInfo.video">
                         <video controls="controls">
                             <source :src="detailInfo.video" type="video/mp4" />
@@ -78,35 +109,35 @@
                                 <span>企业名</span>
                                 <span>票数</span>
                             </li>
-                            <li class="item" v-for="(item,index) in rankList">
+                            <li class="item" v-for="(item,index) in [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]"><!--1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1-->
                                 <span>
-                                    <b>{{item.top}}</b>
+                                    <b>1</b>
                                 </span>
                                 <span>
-                                    <img :src="item.logo" alt="">
+                                    <img src="./images/logo.png" alt="">
                                 </span>
-                                <span>{{item.name}}}</span>
-                                <span>{{item.vote_num}}</span>
+                                <span>aaaaaaaaaaa</span>
+                                <span>11</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <img src="./images/detail_bg_03.png" alt="">
+                    <img src="./images/detail_bg_03_s.png" alt="">
                 </div>
             </div>
         </div>
         <!-- 加载中 -->
-        <div id="loadingToast" v-show="loading.status">
+        <!-- <div id="loadingToast" v-show="loading.status">
             <div class="weui-mask_transparent"></div>
             <div class="weui-toast">
                 <i class="weui-loading weui-icon_toast"></i>
                 <p class="weui-toast__content" v-html="loading.txt"></p>
             </div>
-        </div>
+        </div> -->
         <!--按钮提示框-->
         <!--BEGIN dialog2-->
-        <div class="js_dialog" id="iosDialog2" v-show="dialog.status">
+        <!-- <div class="js_dialog" id="iosDialog2" v-show="dialog.status">
             <div class="weui-mask"></div>
             <div class="weui-dialog">
                 <div class="weui-dialog__bd">{{dialog.txt}}</div>
@@ -114,17 +145,17 @@
                     <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary" @click="dialog.status = false">知道了</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- 提示框，1000消失 -->
-        <div class="tipBox" v-show="alert.status">
+        <!-- <div class="tipBox" v-show="alert.status">
             <div class="tibBox_inner">
                 <p v-html="alert.txt"></p>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="js/zepto.min.js"></script>
     <script src="js/vue.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/nch5/index.js?t=2015052012"></script>
+    <!-- <script type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/nch5/index.js?t=2015052012"></script> -->
     <script>
         //加载资源数组必须在loading之前进行配置
         $(function () {

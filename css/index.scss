@@ -64,9 +64,14 @@ body{
         background-size: 100% auto;
         width: 100%;
         min-height: REM(500);
+        position: relative;
         
         .text{
             padding: 0 REM(120);
+            h3{
+                color: #fff;
+                font-size: 1rem;
+            }
             .logo{
                 width: REM(155);
                 margin: 0 auto;
@@ -77,6 +82,7 @@ body{
             p{
                 color: #f3eb64;
                 font-size: REM(24);
+                line-height: 1.6rem;
                 &.brand{
                     padding-top: REM(10);
                     font-weight: bold;
@@ -104,20 +110,20 @@ body{
                 margin: 0 auto;
                 display: block;
                 position: absolute;
-                bottom: REM(50);
+                bottom: -4rem;
                 left: 50%;
                 margin-left: REMTWO(226);
             }
         }
         .boardList{
-            padding: 0 REM(120);
+            padding: 0 REM(80);
             ul{
                 li{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     color: #f3eb64;
-                    padding: REM(5) 0;
+                    padding: REM(5) REM(20);
                     overflow: hidden;
                     span{
                         display: block;
@@ -157,7 +163,15 @@ body{
     }
 }
 
-
+.board{
+    position: fixed !important;
+    .centerBox{
+        .boardList{
+            height: 25rem;
+            overflow: auto;
+        }
+    }
+}
 #index-box{
     width: 100%;
     // height: 100%;
