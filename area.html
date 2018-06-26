@@ -19,7 +19,7 @@
     <div class="area" id="area" v-clock>
         <div class="area_1"  v-if="index == 1"> <!--4-->
             <img src="./images/area1.jpg" alt="">
-            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+            <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
                 </div>
@@ -27,317 +27,337 @@
                 <div class="home" @click="goDetail(item.id)">
                     <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
                 </div>
+            </div> -->
+            <div class="item itemL item1">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
             </div>
-            <!-- <div class="item itemR item2">
-                <div class="logo"></div>
+            <div class="item itemR item2">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item3">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item4">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div> -->
+            </div>
         </div>
         <div class="area_2" v-if="index == 2">
             <img src="./images/area2.jpg" alt="">
-            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+            <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
                 <div class="home" @click="goDetail(item.id)">
                     <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
                 </div>
+            </div> -->
+            <div class="item itemL item1">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
             </div>
-            <!-- <div class="item itemR item2">
-                <div class="logo"></div>
+            <div class="item itemR item2">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item3">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item4">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item5">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div> -->
+            </div>
         </div>
         <div class="area_3" v-if="index == 3">
             <img src="./images/area3.jpg" alt="">
-            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+            <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">{{item.vote_num}}</div>
                 <div class="home" @click="goDetail(item.id)">
                     <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
                 </div>
+            </div> -->
+            <div class="item itemL item1">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
             </div>
-            <!-- <div class="item itemR item2">
-                <div class="logo"></div>
+            <div class="item itemR item2">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item3">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item4">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item5">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item6">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item7">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item8">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item9">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item10">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item11">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item12">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item13">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item14">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item15">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item16">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item17">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item18">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item19">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item20">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item21">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item22">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item23">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item24">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item25">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item26">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item27">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item28">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item29">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item30">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item31">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div> -->
+            </div>
         </div>
         <div class="area_4" v-if="index == 4">
             <img src="./images/area4.jpg" alt="">
-            <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
+            <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">{{item.vote_num}}</div>
                 <div class="home" @click="goDetail(item.id)">
                         <img src="./images/house.jpg" v-show="item.is_vote == 0" alt="">
                 </div>
+            </div> -->
+            <div class="item itemL item1">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="score">123,00</div>
+                <div class="home"></div>
             </div>
-            <!-- <div class="item itemR item2">
-                <div class="logo"></div>
+            <div class="item itemR item2">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item3">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item4">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item5">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item6">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item7">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item8">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item9">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item10">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item11">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item12">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item13">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item14">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item15">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item16">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item17">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item18">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemL item19">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
             </div>
             <div class="item itemR item20">
-                <div class="logo"></div>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div> -->
+            </div>
 
         </div>
         <!-- 加载中 -->

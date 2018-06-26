@@ -227,7 +227,7 @@ body{
     .item{
         width: REM(242);
         height: REM(168);
-        // background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.5);
         position: absolute;
         .logo{
             width: REM(81);
@@ -257,11 +257,10 @@ body{
             height: REM(116);
             position: absolute;
             bottom: 0;
-            // background: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.5);
         }
     }
     .area_1{
-        position: relative;
         .item .logo{
             height: REM(40);
         }
@@ -272,8 +271,7 @@ body{
             }
             .score{
                 right: REM(0);
-                // top: REM(35);
-                top: 19%;
+                top: REM(35);
             }
             .home{
                 left: REM(6);
@@ -294,8 +292,7 @@ body{
         }
         .item1{
            left: REM(64);
-        //    top: REM(213); 
-            top: 19%;
+           top: REM(213); 
            .home{
                left: REM(5);
                top: REM(70);
@@ -304,35 +301,29 @@ body{
         .item2{
             right: REM(165);
             // top: REM(319);
-            top: 28.5%;
-            .score{
-                top: 33%;
-            }
+            top: 26.2%;
             .home{
                 bottom: REM(-5);
             }
         }
         .item3{
             left: REM(78);
-            // top: REM(479);
-            top: 42.3%;
+            top: REM(479);
             .logo{
                 top: REM(5);
             }
         }
         .item4{
             left: REM(100);
-            // top: REM(798);
-            top: 70.8%;
+            top: REM(798);
             .score{
-                top: 29%;
+                top: REM(56);
             }
         }
     }
 
     //地图2
     .area_2{
-        position: relative;
         .item{
             width: REM(248);
         }
@@ -363,46 +354,40 @@ body{
             }
         }
         .item1{
-            // top: REM(110);
-            top: 8.1%;
+            top: REM(110);
             left: REM(121);
         }
         .item2{
-            // top: REM(213);
-            top: 15.8%;
+            top: REM(213);
             right: REM(174);
             .home{
                 bottom: REM(-2);
             }
         }
         .item3{
-            // top: REM(388);
-            top: 28.5%;
+            top: REM(388);
             left: REM(140);
             .score{
                 top: REM(25);
             }
         }
         .item4{
-            // top: REM(699);
-            top: 51.2%;
-            left:REM(173);
+            top: REM(699);
+            left:REM(175);
             .score{
                 top: REM(48);
             }
 
         }
         .item5{
-            left: REM(330);
-            // top: REM(1038);
-            top: 75.9%;
+            left: REM(332);
+            top: REM(1038);
             .score{
                 top: REM(18);
             }
         }
     }
     .area_3{
-        position: relative;
         .item{
             
             .home{
@@ -434,8 +419,7 @@ body{
             }
             .logo{
                 right: REM(5);
-                // top: 0;
-                top: 2%;
+                top: 0;
             }
             .score{
                 left: REM(5);
@@ -447,24 +431,21 @@ body{
             width: REM(238);
             height: REM(190);      
             left: REM(65);
-            // top: REM(258);
-            top: 7%;
+            top: REM(258);
             .logo{
                 top: REM(20);
             }
         }
         .item2{
             right: REM(165);
-            // top: REM(143);
-            top: 3.95%;
+            top: REM(143);
             .score{
                 top: REM(115);
                 left: REM(5);
             }
         }
         .item3{
-            // top: REM(369);
-            top: 10%;
+            top: REM(369);
             right: REM(164);
             .score{
                 top: REM(55);
@@ -472,26 +453,22 @@ body{
             }
         }
         .item4{
-            // top: REM(518);
-            top: 14%;
+            top: REM(518);
             left:REM(81);
         }
         .item5{
-            // top: REM(588);
-            top: 15.8%;
+            top: REM(588);
             right: REM(17);
         }
         .item6{
-            // top: REM(818);
-            top: 21.97%;
+            top: REM(818);
             right: REM(38);
             .score{
                 top: REM(52);
             }
         }
         .item7{
-            // top: REM(1020);
-            top: 27.45%;
+            top: REM(1020);
             right: REM(108);
             .score{
                 top: REM(20);
@@ -499,8 +476,7 @@ body{
             }
         }
         .item8{
-            // top: REM(848);
-            top: 22.9%;
+            top: REM(848);
             right: REM(410);
             .logo{
                 right: REM(9);
@@ -512,21 +488,18 @@ body{
             }
         }
         .item9{
-            // top: REM(1096);
-            top: 29.55%;
+            top: REM(1096);
             left: REM(109);
         }
         .item10{
-            // top: REM(1182);
-            top: 31.8%;
+            top: REM(1182);
             left: REM(342);
             .score{
                 top: REM(23);
             }
         }
         .item11{
-            top: 32.68%;
-            // top: REM(1212);
+            top: REM(1212);
             right: REM(18);
             .score{
                 top: REM(138);
@@ -534,45 +507,36 @@ body{
         }
         .item12{
             right: REM(17);
-            // top: REM(1590);
-            top: 42.9%;
+            top: REM(1590);
             .score{
                 top: REM(28);
             }
         }
         .item13{
             left: REM(285);
-            // top: REM(1415);
-            top: 38.2%;
+            top: REM(1415);
         }
         .item14{
             left: REM(22);
-            // top: REM(1503);
-            top: 40.4%;
+            top: REM(1503);
         }
         .item15{
-            left: 9.8%;
-            top: 47%;        
-            // left: REM(79);
-            // top: REM(1742);
+            left: REM(79);
+            top: REM(1742);
         }
         .item16{
-            left: 36.5%;
-            top: 50.15%;
-            // left: REM(285);
-            // top: REM(1860);
+            left: REM(285);
+            top: REM(1860);
         }
         .item17{
-            // top: REM(1775);
-            top: 47.86%;
+            top: REM(1775);
             right: REM(-8);
             .score{
                 top: REM(25);
             }
         }
         .item18{
-            // top: REM(2065);
-            top: 55.58%;
+            top: REM(2065);
             right: REM(15);
             .score{
                 top: REM(15);
@@ -580,8 +544,7 @@ body{
             }
         }
         .item19{
-            // top: REM(2100);
-            top: 56.5%;
+            top: REM(2100);
             left: REM(345);
             .score{
                 top: REM(115);
@@ -589,30 +552,25 @@ body{
         }
         .item20{
             left: REM(40);
-            // top: REM(2105);
-            top: 56.65%;
+            top: REM(2105);
         }
         .item21{
             left: REM(227);
-            // top: REM(2340);
-            top: 63%;
+            top: REM(2340);
         }
         .item22{
             left: REM(35);
-            top: 66.32%;
-            // top: REM(2462);
+            top: REM(2462);
             .score{
                 top:REM(135);
             }
         }
         .item23{
-            // top: REM(2398);
-            top: 64.5%;
+            top: REM(2398);
             right: REM(22);
         }
         .item24{
-            // top: REM(2569);
-            top: 69.15%;
+            top: REM(2569);
             right: REM(81);
             .score{
                 top: REM(25);
@@ -620,8 +578,7 @@ body{
             }
         }
         .item25{
-            // top: REM(2635);
-            top: 70.95%;
+            top: REM(2635);
             right: REM(360);
             .score{
                 top: REM(115);
@@ -629,8 +586,7 @@ body{
             }
         }
         .item26{
-            // top: REM(2875);
-            top: 77.45%;
+            top: REM(2875);
             right: REM(355);
             .score{
                 top: REM(125);
@@ -638,8 +594,7 @@ body{
             }
         }
         .item27{
-            // top: REM(2828);
-            top: 76.1%;
+            top: REM(2828);
             right: REM(57);
             .score{
                 top: REM(115);
@@ -647,8 +602,7 @@ body{
             }
         }
         .item28{
-            // top: REM(3145);
-            top: 84.65%;
+            top: REM(3145);
             left: REM(418);
             .score{
                 top: REM(115);
@@ -656,8 +610,7 @@ body{
             }
         }
         .item29{
-            // top: REM(3081);
-            top: 82.9%;
+            top: REM(3081);
             left: REM(125);
             .score{
                 top: REM(115);
@@ -665,20 +618,16 @@ body{
             }
         }
         .item30{
-            // top: REM(3250);
-            // left: REM(17);
-            top: 87.5%;
-            left: 2.2%;
+            top: REM(3250);
+            left: REM(17);
             .score{
                 top: REM(115);
                 left:REM(10);
             }
         }
         .item31{
-            // top: REM(3455);
-            top: 93%;
-            left: 33.2%;
-            // left: REM(255);
+            top: REM(3455);
+            left: REM(255);
             .score{
                 top: REM(115);
                 left:REM(10);
@@ -686,7 +635,6 @@ body{
         }
     }
     .area_4{
-        position: relative;
         .item{
             
             .home{
@@ -730,8 +678,7 @@ body{
             width: REM(238);
             height: REM(190);      
             left: REM(55);
-            // top: REM(158);
-            top: 6.25%;
+            top: REM(158);
             .logo{
                 top: REM(20);
             }
@@ -741,16 +688,14 @@ body{
         }
         .item2{
             right: REM(170);
-            // top: REM(45);
-            top: 1.8%;
+            top: REM(45);
             .score{
                 top: REM(115);
                 left: REM(5);
             }
         }
         .item3{
-            // top: REM(270);
-            top: 10.55%;
+            top: REM(270);
             right: REM(168);
             .score{
                 top: REM(55);
@@ -758,26 +703,22 @@ body{
             }
         }
         .item4{
-            // top: REM(418);
-            top: 16.4%;
+            top: REM(418);
             left:REM(78);
         }
         .item5{
-            // top: REM(488);
-            top: 19%;
+            top: REM(488);
             right: REM(22);
         }
         .item6{
-            // top: REM(718);
-            top: 27.9%;
+            top: REM(718);
             right: REM(42);
             .score{
                 top: REM(52);
             }
         }
         .item7{
-            // top: REM(920);
-            top: 35.9%;
+            top: REM(920);
             right: REM(118);
             .score{
                 top: REM(20);
@@ -785,8 +726,7 @@ body{
             }
         }
         .item8{
-            // top: REM(748);
-            top: 29.2%;
+            top: REM(748);
             right: REM(415);
             .logo{
                 right: REM(9);
@@ -798,21 +738,18 @@ body{
             }
         }
         .item9{
-            // top: REM(995);
-            top: 38.85%;
+            top: REM(995);
             left: REM(100);
         }
         .item10{
-            // top: REM(1082);
-            top: 42.15%;
-            left: REM(335);
+            top: REM(1082);
+            left: REM(338);
             .score{
                 top: REM(23);
             }
         }
         .item11{
-            // top: REM(1112);
-            top: 43.5%;
+            top: REM(1112);
             right: REM(20);
             .score{
                 top: REM(138);
@@ -820,33 +757,28 @@ body{
         }
         .item12{
             right: REM(20);
-            // top: REM(1490);
-            top: 58.18%;
+            top: REM(1490);
             .score{
                 top: REM(28);
             }
         }
         .item13{
             left: REM(280);
-            // top: REM(1315);
-            top: 51.4%;
+            top: REM(1315);
         }
         .item14{
             left: REM(15);
-            // top: REM(1400);
-            top: 54.6%;
+            top: REM(1400);
         }
         .item15{
             left: REM(275);
-            // top: REM(1760);
-            top: 68.65%;
+            top: REM(1760);
             .score{
                 top: REM(28);
             }
         }
         .item16{
-            // top: REM(1678);
-            top: 65.3%;
+            top: REM(1678);
             right: REM(0);
             .score{
                 top: REM(25);
@@ -854,8 +786,7 @@ body{
         }
         .item17{
             right:REM(22);
-            // top: REM(1966);
-            top: 76.58%;
+            top: REM(1966);
             .score{
                 top: REM(15);
                 left: REM(8);
@@ -863,17 +794,14 @@ body{
         }
         .item18{
             left: REM(35);
-            // top: REM(2002)
-            top: 78.08%;
+            top: REM(2002);
         }
         .item19{
             left: REM(376);
-            // top: REM(2225);
-            top: 86.75%;
+            top: REM(2225);
         }
         .item20{
-            // top: REM(2296);
-            top: 89.5%;
+            top: REM(2296);
             right: REM(27);
         }
     }
