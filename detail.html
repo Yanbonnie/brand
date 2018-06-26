@@ -21,7 +21,7 @@
             <div id="nc"></div>
         </div>
         <div class="topBtnBox">
-            <span @click="history.back()">
+            <span @click="history.back()" style="opacity: 0;">
                 <img src="./images/back.png" alt="">
             </span>
             <span @click="getRankingData">
@@ -88,7 +88,7 @@
         <!-- 排行榜 -->
         <div class="board cover" v-show="boardState">
             <div class="topBtnBox">
-                <span @click.stop="boardState = false">
+                <span @click.stop="boardState = false" style="opacity: 0;">
                     <img src="./images/back.png" alt="" >
                 </span>
                 <span>
@@ -96,14 +96,18 @@
                 </span>
             </div>
             <div class="centerBox">
-                <div class="title">
+                <div class="title" style="opacity: 0;">
                     <img src="./images/detail_bg_01.png" alt="">
                     <h3>排行榜</h3>
                 </div>
-                <div class="contain">
-                    <div class="boardList">
-                        <ul>
-                            <li class="item">
+                <div class="contain" style="background: #fff">
+                    <div class="searchBox">
+                        <input type="text" name="">
+                        <span>搜索</span>
+                    </div>
+                    <div class="boardList" style="background: #ccc">
+                        <ul  style="opacity: 0;">
+                            <li class="item" >
                                 <span>名次</span>
                                 <span>企业LOGO</span>
                                 <span>企业名</span>
@@ -113,7 +117,7 @@
                                 <span>
                                     <b>1</b>
                                 </span>
-                                <span>
+                                <span style="opacity: 0;">
                                     <img src="./images/logo.png" alt="">
                                 </span>
                                 <span>aaaaaaaaaaa</span>
@@ -123,7 +127,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./images/detail_bg_03_s.png" alt="">
+                    <img src="./images/detail_bg_03_s.png" alt="" style="opacity: 0;">
                 </div>
             </div>
         </div>
@@ -182,7 +186,7 @@
                         status:false,
                         txt:'这里是提示内容'
                     },
-                    boardState:false,
+                    boardState:true,
                     rankList:[],
                     yzState:false,
                     count:0

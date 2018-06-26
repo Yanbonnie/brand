@@ -65,7 +65,25 @@ body{
         width: 100%;
         min-height: REM(500);
         position: relative;
-        
+        .searchBox{
+            display:flex;
+            padding: REM(10) REM(120);
+            input{
+                height:30px;
+                line-height:30px;
+                border:1px #f3eb64 solid;
+                display:block;
+                flex-grow:1;
+                text-indent:10px;
+            }
+            span{
+                flex-basis:60px;
+                text-align:center;
+                background:#f3eb64;
+                color:#fff;
+                line-height:30px;
+            }
+        }
         .text{
             padding: 0 REM(120);
             h3{
@@ -81,7 +99,7 @@ body{
             }
             p{
                 color: #f3eb64;
-                font-size: REM(24);
+                font-size: 1rem;
                 line-height: 1.6rem;
                 &.brand{
                     padding-top: REM(10);
