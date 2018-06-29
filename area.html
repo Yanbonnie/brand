@@ -19,6 +19,10 @@
     <div class="area" id="area" v-clock>
         <div class="area_1"  v-if="index == 1"> <!--4-->
             <img src="./images/area1.jpg" alt="">
+            <div class="hengfu floatupdown">
+                <img class="fadeInLeft2 " src="./images/test.png">
+            </div>
+            <img class="plain fadeInLeft" src="./images/plain.png">
             <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
@@ -28,7 +32,7 @@
                     <img src="./images/house.jpg" v-if="item.is_vote == 0" alt="">
                 </div>
             </div> -->
-            <div class="item itemL item1">
+           <!--  <div class="item itemL item1">
                 <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
@@ -47,10 +51,14 @@
                 <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <div class="score">123,00</div>
                 <div class="home"></div>
-            </div>
+            </div> -->
         </div>
         <div class="area_2" v-if="index == 2">
             <img src="./images/area2.jpg" alt="">
+            <div class="hengfu floatupdown">
+                <img class="fadeInLeft2 " src="./images/test.png">
+            </div>
+            <img class="plain fadeInLeft" src="./images/plain.png">
             <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">123,00</div>
@@ -86,6 +94,10 @@
         </div>
         <div class="area_3" v-if="index == 3">
             <img src="./images/area3.jpg" alt="">
+            <div class="hengfu floatupdown">
+                <img class="fadeInLeft2 " src="./images/test.png">
+            </div>
+            <img class="plain fadeInLeft" src="./images/plain.png">
             <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">{{item.vote_num}}</div>
@@ -251,6 +263,10 @@
         </div>
         <div class="area_4" v-if="index == 4">
             <img src="./images/area4.jpg" alt="">
+            <div class="hengfu floatupdown">
+                <img class="fadeInLeft2 " src="./images/test.png">
+            </div>
+            <img class="plain fadeInLeft" src="./images/plain.png">
             <!-- <div class="item" v-for="(item,Index) in companyList" :class="handleArr[index][Index]">
                 <div class="logo"></div>
                 <div class="score">{{item.vote_num}}</div>
@@ -360,7 +376,7 @@
             </div>
 
         </div>
-        <div class="brandCover cover">
+        <div class="brandCover cover" v-show="false">
             <div class="brandBox">
                 <span class="close">x</span>
                 <h3>asdgjasjf</h3>
