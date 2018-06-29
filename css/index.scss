@@ -1097,7 +1097,7 @@ body{
 .hengfu{
     position:absolute;
     top:5%;
-    width:REM(334);
+    width:REM(375);
     left:50%;
     margin-left:REMTWO(334);
 }
@@ -1119,11 +1119,11 @@ body{
 .area_3 .plain{
     top:1.5%;
 }
-.area_4 .hengfu{
-    top:1%;
+.blank .hengfu{
+    top:25%;
 }
-.area_4 .plain{
-    top:1.5%;
+.blank .plain{
+    top:42%;
 }
 @keyframes fadeInLeft {
     0% {
@@ -1148,13 +1148,13 @@ body{
     }
 }
 .fadeInLeft {
-    animation: fadeInLeft 3s linear both;
+    animation: fadeInLeft 3.1s linear both;
 }
 
 @keyframes fadeInLeft2 {
     0% {
         opacity: 1;
-        transform: translate3d(-200%,0,0)
+        transform: translate3d(-195%,0,0)
     }
 
     to {
@@ -1165,7 +1165,7 @@ body{
 @-webkit-keyframes fadeInLeft2 {
     0% {
         opacity: 1; 
-        -webkit-transform: translate3d(-200%,0,0)
+        -webkit-transform: translate3d(-195%,0,0)
     }
 
     to {
@@ -1174,7 +1174,7 @@ body{
     }
 }
 .fadeInLeft2 {
-    animation: fadeInLeft2 2.3s linear both;
+    animation: fadeInLeft2 2.5s linear both;
 }
 
 /*氢气球上下动效果*/
